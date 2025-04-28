@@ -1,18 +1,12 @@
 #creates the site columns for the QnA content type
 
-if(-not $contenttypehubUrl)
-{
-    $contenttypehubUrl = Read-Host -Prompt "Enter the Content Type Hub URL (e.g., https://contoso.sharepoint.com/sites/contenttypehub)"
-}
-if(-not $PnPClientId)
-{
-    $PnPClientId = Read-Host -Prompt "Enter the PnP Client ID (App ID)"
-}
 
 
-Connect-PnPOnline -Url $contenttypehubUrl -Interactive -ClientId $PnPClientId
+function Create-SiteColumns {
+    
+    
 
-#create a function to check if a site column exists and create it if it doesn't
+
 function Create-SiteColumn {
     param (
         [string]$siteColumnName,
@@ -52,3 +46,4 @@ Create-SiteColumn -siteColumnName "Question and Answer Category" -siteColumnInte
 
 
 
+}
