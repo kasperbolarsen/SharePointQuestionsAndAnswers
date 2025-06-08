@@ -23,6 +23,6 @@ Create-SiteColumns
 
 CreateQnAContenttype
 
-UpdatesSearchSchema
+#UpdatesSearchSchema , not ready for production yet
 
 

@@ -1,0 +1,29 @@
+{
+	"documentationLink": "https://microsoft-search.github.io/pnp-modern-search/",
+	"selectedLayoutKey": "Vertical",
+	"inlineTemplateContent": "",
+	"filterOperator": "or",
+	"layoutProperties": {},
+	"dataResultsDataSourceReferences": [
+		"WebPart.544c1372-42df-47c3-94d6-017428cd2baf.770122f7-2500-4d00-93f4-8b4ff9a52ff3:pnpSearchResultsWebPart"
+	],
+	"filtersConfiguration": [
+		{
+			"uniqueId": "3f747260-3bd6-46d7-b283-e16479e026e7",
+			"displayValue": "Category",
+			"filterName": "RefinableString15",
+			"maxBuckets": null,
+			"selectedTemplate": "CheckboxFilterTemplate",
+			"expandByDefault": true,
+			"showCount": true,
+			"isMulti": null,
+			"operator": "and",
+			"sortBy": "ByName",
+			"sortDirection": "Ascending",
+			"sortIdx": 1,
+			"type": "Refiner"
+		}
+	],
+	"useVerticals": false,
+	"selectedVerticalKeys": []
+}
