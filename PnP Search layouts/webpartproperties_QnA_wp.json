@@ -1,0 +1,201 @@
+{
+	"documentationLink": "https://microsoft-search.github.io/pnp-modern-search/",
+	"allowWebPartConnections": true,
+	"selectedLayoutKey": "ResultsCustom",
+	"resultTypes": [],
+	"dataSourceProperties": {
+		"queryTemplate": "ContentType =\"Questions and Answers\" \nAND RefinableDate03<{today} AND RefinableDate04>{today}",
+		"enableQueryRules": false,
+		"enableLocalization": false,
+		"refinementFilters": "",
+		"selectedProperties": [
+			"AuthorOWSUSER",
+			"contentclass",
+			"ContentTypeId",
+			"Created",
+			"CreatedBy",
+			"DefaultEncodingURL",
+			"FileType",
+			"HitHighlightedProperties",
+			"HitHighlightedSummary",
+			"HtmlFileType",
+			"JobTitle",
+			"NormListID",
+			"NormSiteID",
+			"NormUniqueID",
+			"NormWebID",
+			"owstaxidmetadataalltagsinfo",
+			"Path",
+			"PictureThumbnailURL",
+			"QnAAnswerOWSMTXT",
+			"QnAQuestionOWSMTXT",
+			"SiteLogo",
+			"SiteTitle",
+			"SPSiteURL",
+			"SPWebUrl",
+			"Title",
+			"UniqueID",
+			"UserName",
+			"WorkPhone"
+		],
+		"resultSourceId": "8413cd39-2156-4e00-b54d-11efd9abdb89",
+		"hitHighlightedProperties": "",
+		"trimDuplicates": false,
+		"sortList": []
+	},
+	"queryTextSource": 0,
+	"layoutProperties": {},
+	"showSelectedFilters": false,
+	"showResultsCount": false,
+	"showBlankIfNoResult": false,
+	"useMicrosoftGraphToolkit": false,
+	"itemSelectionProps": {
+		"allowItemSelection": false,
+		"selectionMode": "AsDataFilter",
+		"allowMulti": false,
+		"valuesOperator": "or",
+		"selectionPreservedOnEmptyClick": false
+	},
+	"extensibilityLibraryConfiguration": [
+		{
+			"name": "Default extensibility library",
+			"enabled": true,
+			"id": "dc4f961b-dbe0-44b4-982d-5776bf99d015"
+		}
+	],
+	"queryModifierConfiguration": [],
+	"queryModifierProperties": {
+		"endWhenSuccessfull": false
+	},
+	"selectedVerticalKeys": [],
+	"useVerticals": false,
+	"paging": {
+		"itemsCountPerPage": 10,
+		"pagingRange": 5,
+		"showPaging": true,
+		"hideDisabled": true,
+		"hideFirstLastPages": false,
+		"hideNavigation": false,
+		"useNextLinks": false
+	},
+	"adaptiveCardsHostConfig": "{\n\t\"fontFamily\": \"Segoe UI, Helvetica Neue, sans-serif\"\n}",
+	"layoutRenderType": "Handlebars",
+	"dataSourceKey": "SharePointSearch",
+	"templateSlots": [
+		{
+			"slotName": "Title",
+			"slotField": "QnAQuestionOWSMTXT",
+			"sortIdx": 1
+		},
+		{
+			"slotName": "Path",
+			"slotField": "DefaultEncodingURL",
+			"sortIdx": 2
+		},
+		{
+			"slotName": "Summary",
+			"slotField": "QnAAnswerOWSMTXT",
+			"sortIdx": 3
+		},
+		{
+			"slotName": "FileType",
+			"slotField": "FileType",
+			"sortIdx": 4
+		},
+		{
+			"slotName": "PreviewImageUrl",
+			"slotField": "AutoPreviewImageUrl",
+			"sortIdx": 5
+		},
+		{
+			"slotName": "PreviewUrl",
+			"slotField": "AutoPreviewUrl",
+			"sortIdx": 6
+		},
+		{
+			"slotName": "Author",
+			"slotField": "AuthorOWSUSER",
+			"sortIdx": 7
+		},
+		{
+			"slotName": "Tags",
+			"slotField": "owstaxidmetadataalltagsinfo",
+			"sortIdx": 8
+		},
+		{
+			"slotName": "Date",
+			"slotField": "Created",
+			"sortIdx": 9
+		},
+		{
+			"slotName": "SiteId",
+			"slotField": "NormSiteID",
+			"sortIdx": 10
+		},
+		{
+			"slotName": "WebId",
+			"slotField": "NormWebID",
+			"sortIdx": 11
+		},
+		{
+			"slotName": "ListId",
+			"slotField": "NormListID",
+			"sortIdx": 12
+		},
+		{
+			"slotName": "ItemId",
+			"slotField": "NormUniqueID",
+			"sortIdx": 13
+		},
+		{
+			"slotName": "IsFolder",
+			"slotField": "ContentTypeId",
+			"sortIdx": 14
+		},
+		{
+			"slotName": "contentclass",
+			"slotField": "contentclass",
+			"sortIdx": 15
+		},
+		{
+			"slotName": "PersonQuery",
+			"slotField": "AADObjectID",
+			"sortIdx": 16
+		},
+		{
+			"slotName": "UserDisplayName",
+			"slotField": "Title",
+			"sortIdx": 17
+		},
+		{
+			"slotName": "UserEmail",
+			"slotField": "UserName",
+			"sortIdx": 18
+		},
+		{
+			"slotName": "Id",
+			"slotField": "DocId",
+			"sortIdx": 19
+		}
+	],
+	"inlineTemplateContent": null,
+	"externalTemplateUrl": "",
+	"filtersData": {
+		"__type": "DynamicProperty",
+		"value": {
+			"__type": "DynamicProperty",
+			"value": {}
+		}
+	},
+	"queryText": {
+		"__type": "DynamicProperty",
+		"value": {
+			"__type": "DynamicProperty",
+			"value": ""
+		}
+	},
+	"selectedItemFieldValue": {
+		"__type": "DynamicProperty",
+		"value": ""
+	}
+}
