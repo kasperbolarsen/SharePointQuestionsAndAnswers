@@ -1,0 +1,5 @@
+You can either set up the admin page manually or use the provided PowerShell script to deploy the admin page. The admin page is a SharePoint page the list all instances of the QnA content type in the tenant, and shows the details of each instance, like Valid from/To dates and Category
+
+If you run the DeployAdminPage.ps1 script, it will create a new page in the Site Pages library of the site collection of your choice, and add the required web parts to the page. The two JSON files in the AdminPage folder are used to configure the web parts on the page.
+
+Once the script has run successfully, you must navigate to the page and do the final configuration of the web parts. You must set Results web part to point the Search Box and the Refiner (pane #3) and the Refiner must be set to connect to the Results web part (pane #1). 

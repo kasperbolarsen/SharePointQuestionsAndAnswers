@@ -1,25 +1,20 @@
 <content id="data-content">
     <style>
-        .simpletags {
-            display: inline-block;
-            padding: 2px 5px;
-            margin-right: 5px;
-            background-color: #f4f4f4;
-            color: #333;
-            border-radius: 5px;
-            font-size: 12px
-        }
-
-        .example-themePrimary a {
-            color: {};
-        }
-        .collapsible__filterPanel__body__group__header_0c54ef1d {
-    align-items: center;
-    display: flex;
-    margin-bottom: 10px;
-    min-height: 40px;
-}
         
+        .collapsible--area
+        {
+            background-color: {{@root.theme.palette.neutralLighterAlt}};
+            text-indent: 10px;
+        }
+        
+        .collapsible-content
+        {
+            padding: 15px; 
+            background-color: white;
+            font-family: Calibri, Arial, Helvetica, sans-serif;
+            font-size: 11pt;
+        }        
+
             
         
     </style>
@@ -57,19 +52,19 @@
         {{/if}} 
         <ul class="template--defaultList"> 
                 {{#each data.items as |item|}} 
-                    <div style="background-color: hsla(0,0%,78.4%,.2);text-indent: 10px;">
+                    <div class = "collapsible--area">
                     <pnp-collapsible id="collapsible--area" 
                     data-group-name="{{slot item @root.slots.Title}}"
                     data-default-collapsed="true">
                 
                     <template id="collapsible-header">
                         <div>
-                            <!-- My Header! -->
+                            
                         </div>
                     </template> 
                 
                     <template id="collapsible-content">
-                        <div style="padding: 15px; background-color: white;font-family: Calibri, Arial, Helvetica, sans-serif; font-size: 11pt;">{{{getSummary (slot item @root.slots.Summary)}}}</div>
+                        <div class = "collapsible-content">{{{getSummary (slot item @root.slots.Summary)}}}</div>
                     </template>
                 
                     <template id="collapsible-footer">
