@@ -16,7 +16,7 @@ function Create-SiteColumn {
         [string]$termGroupName
     )
 
-    $siteColumn = Get-PnPField -Identity $siteColumnName -ErrorAction SilentlyContinue
+    $siteColumn = Get-PnPField -Identity $siteColumnInternalName -ErrorAction SilentlyContinue
     if ($siteColumn.InternalName -eq $siteColumnInternalName) {
         Write-Host "Site column '$siteColumnName' already exists." -ForegroundColor Yellow
     } else {

@@ -7,9 +7,10 @@ The Prerequisites folder contains the following components:
 - **Content type gallery**: Creating the required Site Colomns and content type "QuestionsAndAnswers" in the content type gallery.
 
 
-Running the EnsurePrerequisites.ps1 will create the Term Store Group, Term Set and Term, and the Site Columns and Content Type in the content type gallery.
+#### Running the EnsurePrerequisites.ps1 will create the Term Store Group, Term Set and Term, and the Site Columns and Content Type in the content type gallery.
 
-Run Deploy.ps1 to deploy the QnA solution. This will create the required list "QnA" in the site collection of your choice, and add the content type "QuestionsAndAnswers" to the list. It will also create a new view "QnA" for the list, and set it as the default view.
+### Deploying the solution to a site collection
+Run DeployToSite.ps1 to deploy the QnA solution. This will create the required list "QnA" in the site collection of your choice, and add the content type "QuestionsAndAnswers" to the list. It will also create a new view "QnA" for the list, and set it as the default view.
 
 Add some test data to the list. This will trigger the search crawler to index the list content, and create the crawled and managed properties required for the QnA solution to work.
 

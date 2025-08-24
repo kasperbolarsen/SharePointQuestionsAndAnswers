@@ -1,8 +1,8 @@
 # Dependency: the Contenttype QuestionsAndAnswers must be deployed to the Content Type Hub before running this script. 
 
-$siteUrl = "https://tcwlv.sharepoint.com/sites/STS-104"
-$PnPClientId = "d7c35d3c-3773-4009-bc67-885da2dd23fa"
-$contenttypehubUrl = "https://tcwlv.sharepoint.com/sites/ContentTypeHub"
+$siteUrl = "https://m365x94650063.sharepoint.com/sites/1107A"
+$PnPClientId = "5ae43e12-a26a-4377-957a-14c7f4496326"
+$contenttypehubUrl = "https://m365x94650063.sharepoint.com/sites/contenttypehub"
 #$siteUrl = Read-Host -Prompt "Enter the SharePoint site URL (e.g., https://contoso.sharepoint.com/sites/qa)"
 #$PnPClientId = Read-Host -Prompt "Enter the PnP Client ID (App ID)"
 #$contenttypehubUrl = Read-Host -Prompt "Enter the Content Type Hub URL (e.g., https://contoso.sharepoint.com/sites/contenttypehub)"
